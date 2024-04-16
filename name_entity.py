@@ -20,7 +20,7 @@ status = st.radio("SELECT ONE OF THE OPTIONS: ", ('ENTER URL', 'ENTER TEXT'))
 
 # Create box url,that when clicked  provide option to input url
 if status=="ENTER URL":
-    url=st.text_input("enter url")
+    url=st.text_input("ENTER URL")
     if st.button("ANALYZE"):
         article=Article(url)
         article.download()
